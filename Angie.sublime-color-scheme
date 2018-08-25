@@ -1,0 +1,291 @@
+{
+	"name": "Angie",
+
+	"variables": {
+		"black": "#000000",
+		"red": "#BF2626",
+		"green": "#6F8F39",
+		"blue": "#538EB6",
+		"purple": "#B3568B",
+
+		"background": "#fffcf9",
+		"foreground": "#333333"
+	},
+
+	"globals": {
+		"background": "var(background)",
+		"foreground": "var(foreground)",
+		"caret": "var(black)",
+		"selection": "#eeeeee",
+		"gutter_foreground": "#666666",
+		"line_highlight": "#F7F4F2"
+	},
+
+	"rules": [
+		{
+			"name": "Comment",
+			"scope": "comment",
+			"foreground": "var(green)"
+		},
+		{
+			"name": "String",
+			"scope": "string",
+			"foreground": "var(red)",
+			"font_style": "italic"
+		},
+		{
+			"name": "Number",
+			"scope": "constant.numeric",
+			"foreground": "var(red)"
+		},
+		{
+			"name": "Keyword",
+			"scope": "keyword",
+			"foreground": "var(blue)"
+		},
+
+		{
+			"name": "Variables",
+			"scope": "variable.other.readwrite, variable.function",
+			"foreground": "var(purple)"
+		},
+
+		{
+			"name": "Storage Type",
+			"scope": "storage.type, storage.modifier, support.type",
+			"foreground": "var(blue)"
+		},
+		{
+			"name": "Support Functions",
+			"scope": "support.function",
+			"foreground": "var(red)"
+		},
+		{
+			"name": "Function Parameters",
+			"scope": "variable.parameter",
+			"foreground": "var(purple)"
+		},
+		{
+			"name": "JS This",
+			"scope": "variable.language.this.js",
+			"foreground": "",
+			"font_style": "bold"
+		},
+		{
+			"name": "Variable Function",
+			"scope": "variable.function",
+			"foreground": ""
+		},
+		{
+			"name": "Instances",
+			"scope": "variable.other.object",
+			"foreground": "",
+			"font_style": ""
+		},
+		{
+			"name": "Request",
+			"scope": "request.name",
+			"foreground": "var(red)"
+		},
+		{
+			"name": "Request Key (Other)",
+			"scope": "request.key",
+			"foreground": "var(blue)"
+		},
+		{
+			"name": "Request Alias",
+			"scope": "request.alias",
+			"foreground": "",
+			"font_style": ""
+		},
+		{
+			"name": "Beau Variables",
+			"scope": "request.key.variable",
+			"foreground": "var(purple)"
+
+		},
+		{
+			"name": "Beau Variable",
+			"scope": "source.yaml variable, constant.language.null.yaml",
+			"foreground": "var(purple)"
+		},
+		{
+			"name": "Beau Tag",
+			"scope": "entity.name.tag.yaml",
+			"foreground": "var(blue)"
+		},
+
+		{
+			"name": "YAML Bool",
+			"scope": "constant.language.boolean.yaml",
+			"foreground": "var(purple)"
+		},
+
+		{
+			"name": "Constants",
+			"scope": "constant.language.boolean",
+			"foreground": "var(blue)",
+			"font_style": "italic"
+		},
+		{
+			"name": "C Brackets",
+			"scope": "meta.brackets.c",
+			"foreground": "var(red)"
+		},
+		// CSS
+		{
+			"name": "CSS Properties",
+			"scope": "support.type.property-name.css",
+			"foreground": "var(purple)"
+		},
+		{
+			"name": "CSS Selectors",
+			"scope": "entity.name.tag.css, entity.other.attribute-name.class.css",
+			"foreground": "var(red)"
+		},
+		{
+			"name": "CSS Pseudo Selectors",
+			"scope": "entity.other.pseudo-class.css",
+			"foreground": "var(blue)"
+		},
+		{
+			"name": "CSS Constants",
+			"scope": "support.constant.property-value.css",
+			"foreground": "var(blue)",
+			"font_style": "italic"
+		},
+		{
+			"name": "CSS Colors",
+			"scope": "constant.other.color.rgb-value.css",
+			"foreground": "var(blue)",
+			"font_style": "italic"
+		},
+
+		// Typescript
+		{
+			"name": "This Keyword",
+			"scope": "variable.language.this.ts",
+			"foreground": "var(black)",
+			"font_style": "bold"
+		},
+		{
+			"name": "Function name",
+			"scope": "meta.definition.method.ts entity.name.function.ts",
+			"foreground": "var(red)",
+			"font_style": ""
+		},
+		{
+			"name": "Storage Modifiers",
+			"scope": "storage.modifier.ts",
+			"foreground": "var(blue)",
+			"font_style": ""
+		},
+		{
+			"name": "Function Call",
+			"scope": "meta.function-call.ts entity.name.function.ts, support.function.ts, support.function.dom.ts",
+			"foreground": "var(blue)",
+			"font_style": ""
+		},
+		{
+			"name": "Function Call",
+			"scope": "meta.type.annotation.ts entity.name.type.ts, entity.name.type.interface.ts, meta.field.declaration.ts meta.type.annotation.ts support.type.primitive.ts",
+			"foreground": "var(red)",
+			"font_style": ""
+		},
+
+		// JSON
+		{
+			"name": "Keys",
+			"scope": "meta.structure.dictionary.key.json string.quoted.double.json",
+			"foreground": "var(blue)",
+			"font_style": ""
+		},
+		{
+			"name": "Constants",
+			"scope": "meta.structure.dictionary.value.json constant.language.json",
+			"foreground": "var(purple)",
+			"font_style": ""
+		},
+
+		// JSX
+		{
+			"name": "Tags",
+			"scope": "entity.name.tag.jsx",
+			"foreground": "var(blue)",
+			"font_style": ""
+		},
+
+		// HTML
+		{
+			"name": "Tags",
+			"scope": "entity.name.tag",
+			"foreground": "var(blue)"
+		},
+		{
+			"name": "Attributes",
+			"scope": "entity.other.attribute-name, meta.tag.sgml.doctype.html",
+			"foreground": "var(purple)"
+		},
+
+		// Markdown
+		{
+			"name": "Headers",
+			"scope": "markup.heading",
+			"foreground": "var(purple)",
+			"font_style": "bold"
+		},
+		{
+			"name": "List",
+			"scope": "punctuation.definition.list_item",
+			"foreground": "var(blue)",
+			"font_style": "bold"
+		},
+		{
+			"name": "Styles",
+			"scope": "markup.bold.markdown",
+			"foreground": "var(blue)",
+			"font_style": "bold"
+		},
+		{
+			"name": "Bold",
+			"scope": "markup.bold.markdown",
+			"foreground": "var(blue)",
+			"font_style": "bold"
+		},
+		{
+			"name": "Italic",
+			"scope": "markup.italic.markdown",
+			"foreground": "var(blue)",
+			"font_style": "italic"
+		},
+		{
+			"name": "ItalicBold",
+			"scope": "markup.bold.markdown markup.italic.markdown",
+			"foreground": "var(blue)",
+			"font_style": "italic bold"
+		},
+		// Ruby
+
+		{
+			"name": "Support Class",
+			"scope": "support.class.ruby, entity.other.inherited-class.ruby",
+			"foreground": "var(purple)",
+		},
+		{
+			"name": "Constants",
+			"scope": "source.ruby constant.language.ruby",
+			"foreground": "var(red)",
+		},
+		{
+			"name": "Symbols",
+			"scope": "constant.other.symbol.ruby",
+			"foreground": "var(purple)",
+		},
+		{
+			"name": "Variables",
+			"scope": "meta.function.ruby variable.language.ruby",
+			"foreground": "var(red)",
+		},
+
+	]
+}
